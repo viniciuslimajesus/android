@@ -23,7 +23,7 @@
     --cor5: #063D1E;
 }
 
-body {
+html, body {
     background-color: var(--cor0);
 }
 
@@ -36,13 +36,13 @@ header {
 }
 
 header h1 {
-    padding: 10px;
+    padding: 15px 0 15px 0;
     font-size: 2.4em;
 }
 
 header p {
-    padding: 15px 0 28px 0;
-    font-size: 0.9em;
+    padding-bottom: 15px;
+    font-size: 0.7em;
 }
 
 span#burguer {
@@ -74,7 +74,7 @@ nav.navegacao ul li a {
 }
 
 .t-principal, .t-secundario {
-    padding: 15px 0 15px 0;
+    padding: 15px;
     font-family: 'Android', Arial, Helvetica, sans-serif;
 }
 
@@ -86,9 +86,11 @@ nav.navegacao ul li a {
     color: var(--cor3);
 }
 
-article.droid p {
+main p {
     font-size: 1.1em;
-    line-height: 30px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2.1em;
 }
 
 .img {
@@ -107,19 +109,18 @@ article.droid p {
 }
 
 main {
-    min-width: 400px;
-    max-width: 1000px;
+    min-width: 320px;
+    max-width: 1050px;
     margin:auto;
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
 }
 
-section {
+section.droid-vid {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    margin: 10px 0 10px 0;
+    margin: 30px -15px 30px -15px;
     padding: 20px;
     background-color: var(--cor5);
 }
@@ -136,12 +137,16 @@ aside h3 {
     background-color: var(--cor5);
     border-top-right-radius: 15px;
     color: #fff;
-    
 }
-
 aside ul {
+    margin: 15px 0 15px 0;
     list-style-position: inside;
     columns: 2;
+    font-weight: 600;
+}
+
+abbr {
+    text-decoration: underline;
 }
 
 footer {
