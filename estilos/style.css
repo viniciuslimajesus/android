@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+}
+
+/*Versão mobile*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #EBE5C5;
+    --cor1: #B3E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    width: 100%;
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 2.4em;
+}
+
+header p {
+    padding: 15px 0 28px 0;
+    font-size: 0.9em;
+}
+
+span#burguer {
+    display: block;
+    padding: 5px;
+    background-color: var(--cor5);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav.navegacao ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--cor4);
+}
+
+nav.navegacao ul li a {
+    display: block;
+    padding: 6px;
+    border-top: 1px solid var(--cor5);
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.t-principal, .t-secundario {
+    padding: 15px 0 15px 0;
+    font-family: 'Android', Arial, Helvetica, sans-serif;
+}
+
+.t-principal {
+    color: var(--cor2);
+}
+
+.t-secundario {
+    color: var(--cor3);
+}
+
+article.droid p {
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+.img {
+    width: 100%;
+}
+
+.img-bugdroid {
+    width: 50%; 
+}
+
+.cont-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+main {
+    min-width: 400px;
+    max-width: 1000px;
+    margin:auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    background-color: var(--cor5);
+}
+
+aside{
+    padding: 10px;
+    background-color: var(--cor2);
+    border-radius: 0 15px 15px 15px;
+}
+
+aside h3 {
+    margin: -10px -10px 0 -10px;
+    padding: 8px;
+    background-color: var(--cor5);
+    border-top-right-radius: 15px;
+    color: #fff;
+    
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    width: 100%;
+    padding: 2px;
+    background-color: #000;
+    text-align: center; 
+    color:#fff;
+}
