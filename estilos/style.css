@@ -76,6 +76,31 @@ nav.navegacao ul li a {
     color: var(--cor2);
 }
 
+main {
+    min-width: 280px;
+    max-width: 1050px;
+    margin:auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+main article p {
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2.1em;
+}
+
+main article a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor2);
+}
+
+main article a:hover {
+    color: var(--cor3);
+}
+
 .t-principal, .t-secundario {
     padding: 18px 8px;
     font-size: 1.3em;
@@ -88,13 +113,6 @@ nav.navegacao ul li a {
 
 .t-secundario {
     color: var(--cor3);
-}
-
-main article p {
-    font-size: 1.1em;
-    text-align: justify;
-    text-indent: 20px;
-    line-height: 2.1em;
 }
 
 .img {
@@ -112,20 +130,12 @@ main article p {
 
 }
 
-main {
-    min-width: 320px;
-    max-width: 1050px;
-    margin:auto;
-    padding: 20px;
-    background-color: #fff;
-}
-
 div.droid-vid {
     display: flex;
     margin: 30px -20px 30px -20px;
     padding: 20px;
     background-color: var(--cor5);
-    box-shadow: inset 6px 10px 24px 4px black;
+    box-shadow: inset 5px 8px 22px 3px black;
 }
 
 iframe {
@@ -146,7 +156,7 @@ aside h3 {
     color: #fff;
 }
 aside ul {
-    margin: 15px 0 15px 22px;
+    margin: 15px 0 15px 15px;
     list-style-position: inside;
     font-weight: 600;
 }
@@ -161,4 +171,33 @@ footer {
     background-color: #000;
     text-align: center; 
     color:#fff;
+}
+
+/*Media query de telas de até 330*/
+
+@media screen and (max-width: 330px) {
+   header h1 {
+     font-size: 1.7em;
+   }
+
+   main article p {
+    font-size: 0.9em;
+   }
+
+   .t-principal, .t-secundario {
+    font-size: 1em;
+   }
+
+   main {
+    padding: 10px;
+   }
+
+   div.droid-vid {
+    margin: 30px -10px 30px -10px;
+   }
+
+   iframe {
+    width: 250px;
+    height: 180px;
+   }
 }
