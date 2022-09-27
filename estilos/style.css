@@ -159,6 +159,7 @@ aside ul {
     margin: 15px 0 15px 15px;
     list-style-position: inside;
     font-weight: 600;
+    color: var(--cor5);
 }
 
 abbr {
@@ -171,6 +172,10 @@ footer {
     background-color: #000;
     text-align: center; 
     color:#fff;
+}
+
+footer a {
+    color: #2222fe;
 }
 
 /*Media query de telas de até 330*/
