@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Curiosidades de tecnologia</h1>
+        <h1>Curiosidades de Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+        <span id="burguer" class="material-symbols-outlined">menu</span>
     </header>
-    <span id="burguer" class="material-symbols-outlined">menu</span>
     <nav class="navegacao">
         <ul>
             <li><a href="#">Home</a></li>
@@ -55,10 +56,8 @@
             <p>
                 A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
             </p>
-        </article>
-        <section class="droid-vid">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+            <div class="droid-vid"><iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         <aside>
             <h3>Quer aprender mais?</h3>
             <p>
@@ -120,6 +119,7 @@
                 Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.
             </p>
         </aside>
+    </article>
     </main>
     <footer>
         <p>Pagína desenvolvida por Vinícius Lima com ajuda do professor Gustavo Guanabara - Curso em video.</p>

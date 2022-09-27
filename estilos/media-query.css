@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    nav{
+        display: block;
+        padding: 6px 10px;
+        box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.479);
+    }
+
+    nav.navegacao ul {
+        flex-direction: row;
+    }
+
+    nav.navegacao ul li a {
+        margin-right: 4px;
+        padding: 8px 10px;
+        border: none;
+        font-size: 0.8em;
+        font-weight: bold;
+        transition-duration: 0.4s;
+    }
+
+    nav.navegacao ul li a:hover {
+        background-color: var(--cor3);
+        border-radius: 5px;
+        color: var(--cor4)
+    }
+
+    main {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .t-principal, .t-secundario {
+        font-size: 1.5em;
+    }
+
+    aside ul {
+        columns: 2;
+    }
+
+}
